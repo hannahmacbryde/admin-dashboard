@@ -1,0 +1,393 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 9fr;
+    gap: 0;
+}
+
+.container div {
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+#header {
+    color: #000;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+#header .search-bar {
+    padding: 10px 10px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 15px;
+    width: 70%;
+}
+
+#header .right-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header .icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#header .name {
+    font-weight: bold;
+}
+
+#header span {
+    color: #000;
+    font-size: 14px;
+}
+
+#header svg.search {
+    width: 25px;
+}
+
+#header svg.bell {
+    width: 25px;
+}
+
+#header svg.user {
+    width: 25px;
+}
+
+#sidebar {
+    background-color: lightblue;
+    grid-row: 1 / 5;
+    padding:0 15px;
+}
+
+#sidebar .top-sidebar {
+    padding: 15px;
+    text-align: left;
+    font-size: 22px;
+    display: flex;
+    gap: 10px;
+}
+
+#sidebar .top-sidebar h2 {
+    color: #fff;
+}
+
+#sidebar .top-sidebar svg.dashboard {
+    fill: white;
+    width: 35px;
+}
+
+#sidebar .middle-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar .middle-sidebar ul li {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+#sidebar .middle-sidebar ul li svg {
+    width: 30px;
+    fill: white;
+}
+
+#sidebar .middle-sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#sidebar .bottom-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar .bottom-sidebar ul li {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+#sidebar .bottom-sidebar ul li svg {
+    width: 30px;
+    fill: white;
+}
+
+#sidebar .bottom-sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    padding:0 15px;
+}
+
+#nav .left-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#nav .left-content .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#nav .right-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#nav .right-content ul {
+    display: flex;
+    gap: 15px;
+}
+
+#nav .right-content ul li {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    background-color: lightblue;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#nav svg {
+    width: 50px;
+}
+
+#article {
+    background-color: #E0E0E2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#article  .projects-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#article  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#article  .project-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#article .an-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#article .announcement-box, #article .trending-box {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#article h3 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Additional Styles */
+
+/* Sidebar Enhancements */
+#sidebar .middle-sidebar ul li a:hover,
+#sidebar .bottom-sidebar ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Header Enhancements */
+#header {
+    background-color: #f5f5f5;
+}
+
+/* Navigation Enhancements */
+#nav .right-content ul li:hover {
+    background-color: #0288d1;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+/* Articles section Enhancements */
+#article .projects-grid .project-card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Footer Enhancements */
+#footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Button Styles */
+button {
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0277bd;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 989px) {
+    /* Sidebar Adjustments */
+    #sidebar {
+        width: 60px;
+        overflow: hidden;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1000;
+    }
+
+    #sidebar .top-sidebar h2,
+    #sidebar .middle-sidebar ul li a,
+    #sidebar .bottom-sidebar ul li a {
+        display: none;
+    }
+
+    #sidebar .top-sidebar,
+    #sidebar .middle-sidebar ul li,
+    #sidebar .bottom-sidebar ul li {
+        justify-content: center;
+    }
+
+    #sidebar .middle-sidebar ul,
+    #sidebar .bottom-sidebar ul {
+        align-items: center;
+    }
+
+    #sidebar .middle-sidebar ul li svg,
+    #sidebar .bottom-sidebar ul li svg {
+        width: 30px;
+        fill: white;
+    }
+
+    #header {
+        padding: 15px;
+        position: relative;
+        left: 20px;
+        width: 79vw;
+    }
+
+    #header .search-bar {
+        width: 35%;
+    }
+
+    #nav {
+        grid-column: 2 / 3;
+        position: relative;
+        z-index: 10;
+        background-color: white; /* Ensure it’s visible */
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 81vw;
+        left: 20px
+    }
+
+    .container {
+        grid-template-columns: 60px 1fr; /* Keep sidebar smaller */
+        grid-template-rows: auto auto 1fr; /* Allow content to adjust */
+    }
+
+    #article {
+        display: flex;
+        flex-direction: column; /* Stack sections */
+        gap: 15px;
+        padding: 15px;
+        width: 95vw;
+        position: relative;
+        left: 78px;
+    }
+
+    #article .projects-grid {
+        grid-template-columns: 1fr; /* Show one project per row */
+    }
+
+    #article .projects-section {
+        width: 75vw;
+    }
+
+    /* Move announcements & trending below projects */
+    .an-sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+
+    #sidebar {
+        width: 60px; /* Keep it small */
+        overflow: hidden; /* Hide text */
+    }
+
+    #sidebar:hover {
+        width: 200px; /* Expand on hover */
+    }
+}
